@@ -49,7 +49,7 @@ def get_db_connection():
 
 
 def frontend_store_data_path() -> Path:
-    return Path(__file__).resolve().parents[1] / "greencart" / "src" / "storeData.js"
+    return Path(__file__).resolve().parents[1] / "GreenCard" / "src" / "storeData.js"
 
 
 def load_seed_products_from_frontend() -> list[dict]:
