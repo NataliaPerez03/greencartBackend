@@ -616,3 +616,9 @@ def login_user(payload: UserLoginIn):
         raise HTTPException(status_code=401, detail="Correo o contrasena incorrectos.")
 
     return {"user": serialize_user(user)}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
